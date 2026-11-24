@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empresa Client Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <aside class="sidebar">
+      <div class="empresa-mark">
+        <img src="assets/empresa-logo.png" alt="Empresa">
+      </div>
+      <nav>
+        <a class="active" href="#">Overview</a>
+        <a href="#">Riesgos</a>
+        <a href="#">Operación</a>
+        <a href="#">Reportes</a>
+        <a href="#">Integraciones</a>
+      </nav>
+    </aside>
+
+    <section class="workspace">
+      <header class="client-head">
+        <div class="client-id">
+          <div class="client-logo">
+            <img src="assets/cliente-logo.svg" alt="Cliente">
+          </div>
+          <div>
+            <span>Dashboard personalizado</span>
+            <h1>Monitoreo operativo</h1>
+          </div>
+        </div>
+        <div class="head-meta">
+          <strong>Julio 2026</strong>
+          <span>Actualizado hace 3 min</span>
+        </div>
+      </header>
+
+      <section class="kpis">
+        <article>
+          <span>Eventos detectados</span>
+          <strong>128</strong>
+          <small class="up">+12% semana</small>
+        </article>
+        <article>
+          <span>Riesgo alto</span>
+          <strong>17</strong>
+          <small class="warn">5 críticos</small>
+        </article>
+        <article>
+          <span>SLA</span>
+          <strong>94%</strong>
+          <small class="ok">objetivo 90%</small>
+        </article>
+        <article>
+          <span>Tiempo medio</span>
+          <strong>38m</strong>
+          <small class="ok">-9 min</small>
+        </article>
+        <article>
+          <span>Informes generados</span>
+          <strong>42</strong>
+          <small>automatizados</small>
+        </article>
+        <article>
+          <span>Ahorro estimado</span>
+          <strong>31h</strong>
+          <small class="ok">operativas</small>
+        </article>
+        <article>
+          <span>Abiertos / cerrados</span>
+          <strong>23/105</strong>
+          <small class="warn">18% en curso</small>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel span-2">
+          <div class="panel-head">
+            <div>
+              <span>Tendencia de eventos</span>
+              <strong>Volumen diario por severidad</strong>
+            </div>
+            <small>últimos 7 días</small>
+          </div>
+          <div class="stack-chart">
+            <div><i style="height:38%"></i><b style="height:18%"></b><em style="height:8%"></em><span>Lun</span></div>
+            <div><i style="height:52%"></i><b style="height:24%"></b><em style="height:10%"></em><span>Mar</span></div>
+            <div><i style="height:46%"></i><b style="height:30%"></b><em style="height:14%"></em><span>Mié</span></div>
+            <div><i style="height:64%"></i><b style="height:22%"></b><em style="height:18%"></em><span>Jue</span></div>
+            <div><i style="height:55%"></i><b style="height:35%"></b><em style="height:24%"></em><span>Vie</span></div>
+            <div><i style="height:42%"></i><b style="height:19%"></b><em style="height:9%"></em><span>Sáb</span></div>
+            <div><i style="height:70%"></i><b style="height:38%"></b><em style="height:28%"></em><span>Hoy</span></div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <span>Riesgo por área</span>
+              <strong>Top unidades</strong>
+            </div>
+          </div>
+          <div class="rank-list">
+            <div><label>Planta Norte</label><span><i style="width:88%"></i></span><b>88</b></div>
+            <div><label>Logística</label><span><i style="width:74%"></i></span><b>74</b></div>
+            <div><label>Campo 3</label><span><i style="width:61%"></i></span><b>61</b></div>
+            <div><label>Terminal</label><span><i style="width:43%"></i></span><b>43</b></div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <span>Alertas recientes</span>
+              <strong>Señales en vivo</strong>
+            </div>
+          </div>
+          <ul class="events">
+            <li><b class="critical"></b><div><strong>Presión fuera de rango</strong><span>Planta Norte · 13:04</span></div></li>
+            <li><b class="warn"></b><div><strong>Demora en respuesta</strong><span>Logística · 12:51</span></div></li>
+            <li><b class="ok"></b><div><strong>Reporte cerrado</strong><span>Campo 3 · 12:33</span></div></li>
+            <li><b class="info"></b><div><strong>Nuevo patrón detectado</strong><span>Terminal · 12:10</span></div></li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <span>Cumplimiento SLA</span>
+              <strong>Por prioridad</strong>
+            </div>
+          </div>
+          <div class="donut">
+            <div class="ring"></div>
+            <div><strong>94%</strong><span>global</span></div>
+          </div>
+          <div class="legend">
+            <span><i class="ok"></i>P1 91%</span>
+            <span><i class="info"></i>P2 96%</span>
+            <span><i class="warn"></i>P3 98%</span>
+          </div>
+        </article>
+
+        <article class="panel span-2">
+          <div class="panel-head">
+            <div>
+              <span>Mapa de criticidad</span>
+              <strong>Frecuencia e impacto</strong>
+            </div>
+          </div>
+          <div class="matrix">
+            <div class="low">Bajo</div><div class="low">Bajo</div><div class="mid">Medio</div><div class="high">Alto</div>
+            <div class="low">Bajo</div><div class="mid">Medio</div><div class="mid">Medio</div><div class="high">Alto</div>
+            <div class="mid">Medio</div><div class="mid">Medio</div><div class="high">Alto</div><div class="critical">Crítico</div>
+          </div>
+        </article>
+
+        <article class="panel span-2">
+          <div class="panel-head">
+            <div>
+              <span>Canales integrados</span>
+              <strong>Fuentes operativas conectadas</strong>
+            </div>
+            <small>6 activos</small>
+          </div>
+          <div class="channels">
+            <div><strong>WhatsApp</strong><span>grupos y avisos</span><b class="ok">Activo</b></div>
+            <div><strong>Sensores</strong><span>presión, estado, caudal</span><b class="ok">Activo</b></div>
+            <div><strong>Formularios</strong><span>carga interna</span><b class="info">Online</b></div>
+            <div><strong>PDF / mails</strong><span>reportes y adjuntos</span><b class="warn">Parcial</b></div>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
